@@ -1,0 +1,27 @@
+class SuperMarket
+{
+   int price,discount;
+   String brand;
+   
+  SuperMarket( String brand, int price, int discount) //create one constructor
+    {
+        this.brand=brand;
+        this.price=price;
+        this.discount=discount;
+    }
+public static void main(String[] args)
+       {
+       SuperMarket brush= new SuperMarket("Pepsodant",30,5);
+       SuperMarket soap= new SuperMarket("Lux",25,2);
+       brush.purchase();
+       soap.purchase();
+       }
+  void purchase()
+       {
+         System.out.println("Customer is buying"+brand+"For price"+price+"of discount"+discount);
+       }
+}
+//////////////////////////////////////////////////////
+output:
+Customer is buying :PepsodantFor price :30 of discount :5
+Customer is buying :LuxFor price :25 of discount :2
